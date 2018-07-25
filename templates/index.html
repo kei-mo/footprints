@@ -1,0 +1,1853 @@
+<html>
+
+<head>
+    <title>Footprints</title>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1>Footprints</h1>
+    <table width="100%"><tbody>
+            <tr class='main'>
+                <td width='380'>
+                    <img id=plotimg src=""></img>
+                </td>
+                <td width='380' valign="top"><b>Description</b>
+                    <p>This web application plots your "footprints".<br><br>
+                        Lived [4 points]<br>
+                        - Lived more than 3 months<br><br>
+                        Stayed [3 points]<br>
+                        - Stayed more than 1 day<br><br>
+                        Explored [2 points]<br>
+                        - Visited but not stayed <br><br>
+                        Passsed  [1 point]<br>
+                        - Passsed or transited at this country<br><br>
+                        Unexplored [0 points]<br>
+                        - Never been<br><br></p>
+                    </td>
+                <td width='380' valign="top" ><b>Your Result</b>
+                    <p>Visited countries</p>
+                    <p id = result1>0</p>
+                    <p>Score</p>
+                    <p id = result2>0</p>
+                </td>
+            </tr>
+            </tbody></table>
+
+    <h3>Select the countries and experiences you've visited, and produce a map of the world with those countries in orange.</h3>
+
+    <p id="tabcontrol">
+            <a href="#tabpage1">Africa</a>
+            <a href="#tabpage2">Asia</a>
+            <a href="#tabpage3">Central America and the Caribbean</a>
+            <a href="#tabpage4">Europe</a>
+            <a href="#tabpage5">The Middle East</a>
+            <a href="#tabpage6">North America</a>
+            <a href="#tabpage7">Oceania</a>
+            <a href="#tabpage8">South America</a>
+            <a href="#tabpage9">South Pole</a>
+    </p>
+
+    <div id="tabbody">
+        <div id="tabpage1"><h3>--Africa--</h3>
+            <table width="100%"><tbody>
+                    <tr class='main'><td width='380'><form id='DZ'><b>Algeria</b><br>
+                        <input type='radio' name='experience' value=4>Lived
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='AO'><b>Angola</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='BJ'><b>Benin</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='BW'><b>Botswana</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='IO'><b>British Indian Ocean Territory</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='BF'><b>Burkina Faso</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='BI'><b>Burundi</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='CM'><b>Cameroon</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='CV'><b>Cape Verde</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='CF'><b>Central African Republic</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='TD'><b>Chad</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='CC'><b>Cocos (Keeling) Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='KM'><b>Comoros</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='CG'><b>Congo</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='CD'><b>Congo, the Democratic Republic of the</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='CI'><b>Côte d'Ivoire</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='DJ'><b>Djibouti</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='EG'><b>Egypt</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='GQ'><b>Equatorial Guinea</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='ER'><b>Eritrea</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='ET'><b>Ethiopia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='TF'><b>French Southern Territories</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GA'><b>Gabon</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GM'><b>Gambia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='GH'><b>Ghana</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GN'><b>Guinea</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GW'><b>Guinea-Bissau</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='HM'><b>Heard Island and McDonald Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='KE'><b>Kenya</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='LS'><b>Lesotho</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='LR'><b>Liberia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='LY'><b>Libya</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='MG'><b>Madagascar</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='MW'><b>Malawi</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='ML'><b>Mali</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='MR'><b>Mauritania</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='MU'><b>Mauritius</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='YT'><b>Mayotte</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='MA'><b>Morocco</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='MZ'><b>Mozambique</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='NA'><b>Namibia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='NE'><b>Niger</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='NG'><b>Nigeria</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='RE'><b>Réunion</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='RW'><b>Rwanda</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='SH'><b>Saint Helena, Ascension and Tristan da Cunha</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='ST'><b>Sao Tome and Principe</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SN'><b>Senegal</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='SC'><b>Seychelles</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SL'><b>Sierra Leone</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SO'><b>Somalia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='ZA'><b>South Africa</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SS'><b>South Sudan</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SD'><b>Sudan</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='SZ'><b>Swaziland</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='TZ'><b>Tanzania, United Republic of</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='TG'><b>Togo</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='TN'><b>Tunisia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='UG'><b>Uganda</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='EH'><b>Western Sahara</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='ZM'><b>Zambia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='ZW'><b>Zimbabwe</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+            </tbody></table><br><br>
+        
+        </div>
+            
+        <div id="tabpage2"><h3>--Asia--</h3>
+            <table width="100%"><tbody>
+                <tr class='main'><td width='380'><form id='BD'><b>Bangladesh</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='BT'><b>Bhutan</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='BN'><b>Brunei Darussalam</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td></tr>
+                    <tr class='main'><td width='380'><form id='KH'><b>Cambodia</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='CN'><b>China</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='HK'><b>Hong Kong</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td></tr>
+                    <tr class='main'><td width='380'><form id='IN'><b>India</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='ID'><b>Indonesia</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='JP'><b>Japan</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td></tr>
+                    <tr class='main'><td width='380'><form id='KZ'><b>Kazakhstan</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='KP'><b>Korea, Democratic People's Republic of</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='KR'><b>Korea, Republic of</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td></tr>
+                    <tr class='main'><td width='380'><form id='KG'><b>Kyrgyzstan</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='LA'><b>Lao People's Democratic Republic</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='MO'><b>Macau</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td></tr>
+                    <tr class='main'><td width='380'><form id='MY'><b>Malaysia</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='MV'><b>Maldives</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='MN'><b>Mongolia</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td></tr>
+                    <tr class='main'><td width='380'><form id='MM'><b>Myanmar</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='NP'><b>Nepal</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='PK'><b>Pakistan</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td></tr>
+                    <tr class='main'><td width='380'><form id='PH'><b>Philippines</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='SG'><b>Singapore</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='LK'><b>Sri Lanka</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td></tr>
+                    <tr class='main'><td width='380'><form id='TW'><b>Taiwan, Province of China</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='TJ'><b>Tajikistan</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='TH'><b>Thailand</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td></tr>
+                    <tr class='main'><td width='380'><form id='TL'><b>Timor-Leste</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='TM'><b>Turkmenistan</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+                    <td width='380'><form id='UZ'><b>Uzbekistan</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td></tr>
+                    <tr class='main'><td width='380'><form id='VN'><b>Viet Nam</b><br>
+                    <input type='radio' name='experience' value=4>Lived 
+                    <input type='radio' name='experience' value=3>Stayed
+                    <input type='radio' name='experience' value=2>Explored
+                    <input type='radio' name='experience' value=1>Passsed
+                    <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                    </form></td>
+            </tbody></table><br><br>
+        </div>
+            
+        <div id="tabpage3"><h3>--Central America and the Caribbean--</h3>
+            <table width="100%"><tbody>
+                    <tr class='main'><td width='380'><form id='AI'><b>Anguilla</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='AG'><b>Antigua and Barbuda</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='AW'><b>Aruba</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='BS'><b>Bahamas</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='BB'><b>Barbados</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='BZ'><b>Belize</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='BM'><b>Bermuda</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='BQ'><b>Bonaire, Saint Eustatius and Saba</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='KY'><b>Cayman Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='CR'><b>Costa Rica</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='CU'><b>Cuba</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='CW'><b>Curaçao</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='DM'><b>Dominica</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='DO'><b>Dominican Republic</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SV'><b>El Salvador</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='GD'><b>Grenada</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GP'><b>Guadeloupe</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GT'><b>Guatemala</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='HT'><b>Haiti</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='HN'><b>Honduras</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='JM'><b>Jamaica</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='MQ'><b>Martinique</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='MX'><b>Mexico</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='MS'><b>Montserrat</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='NI'><b>Nicaragua</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='PA'><b>Panama</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='PR'><b>Puerto Rico</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='BL'><b>Saint Barthélemy</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='KN'><b>Saint Kitts and Nevis</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='LC'><b>Saint Lucia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='MF'><b>Saint Martin (French part)</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='VC'><b>Saint Vincent and the Grenadines</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SX'><b>Sint Maarten (Dutch part)</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='TT'><b>Trinidad and Tobago</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='TC'><b>Turks and Caicos Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='VG'><b>Virgin Islands, British</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='VI'><b>Virgin Islands, U.S.</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+            </tbody></table><br><br>
+        </div>
+        
+        <div id="tabpage4"><h3>--Europe--</h3>
+            <table width="100%"><tbody>
+                    <tr class='main'><td width='380'><form id='AX'><b>Åland Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='AL'><b>Albania</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='AD'><b>Andorra</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='AM'><b>Armenia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='AT'><b>Austria</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='AZ'><b>Azerbaijan</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='BY'><b>Belarus</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='BE'><b>Belgium</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='BA'><b>Bosnia and Herzegovina</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='BG'><b>Bulgaria</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='HR'><b>Croatia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='CY'><b>Cyprus</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='CZ'><b>Czechia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='DK'><b>Denmark</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='EE'><b>Estonia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='FO'><b>Faroe Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='FI'><b>Finland</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='FR'><b>France</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='GE'><b>Georgia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='DE'><b>Germany</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GI'><b>Gibraltar</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='GR'><b>Greece</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GL'><b>Greenland</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GG'><b>Guernsey</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='VA'><b>Holy See (Vatican City State)</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='HU'><b>Hungary</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='IS'><b>Iceland</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='IE'><b>Ireland</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='IM'><b>Isle of Man</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='IT'><b>Italy</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='JE'><b>Jersey</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='LV'><b>Latvia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='LI'><b>Liechtenstein</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='LT'><b>Lithuania</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='LU'><b>Luxembourg</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='MK'><b>Macedonia, the former Yugoslav Republic of</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='MT'><b>Malta</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='MD'><b>Moldova, Republic of</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='MC'><b>Monaco</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='ME'><b>Montenegro</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='NL'><b>Netherlands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='NO'><b>Norway</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='PL'><b>Poland</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='PT'><b>Portugal</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='RO'><b>Romania</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='RU'><b>Russian Federation</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SM'><b>San Marino</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='RS'><b>Serbia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='SK'><b>Slovakia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SI'><b>Slovenia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='ES'><b>Spain</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='SJ'><b>Svalbard and Jan Mayen</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SE'><b>Sweden</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='CH'><b>Switzerland</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='UA'><b>Ukraine</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GB'><b>United Kingdom</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+            </tbody></table><br><br>
+        </div>
+
+        <div id="tabpage5"><h3>--The Middle East--</h3>
+            <table width="100%"><tbody>
+                    <tr class='main'><td width='380'><form id='AF'><b>Afghanistan</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='BH'><b>Bahrain</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='IR'><b>Iran, Islamic Republic of</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='IQ'><b>Iraq</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='IL'><b>Israel</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='JO'><b>Jordan</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='KW'><b>Kuwait</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='LB'><b>Lebanon</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='OM'><b>Oman</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='PS'><b>Palestinian Territory, Occupied</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='QA'><b>Qatar</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SA'><b>Saudi Arabia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='SY'><b>Syrian Arab Republic</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='TR'><b>Turkey</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='AE'><b>United Arab Emirates</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='YE'><b>Yemen</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tbody></table><br><br>
+        </div>
+
+        <div id="tabpage6"><h3>--North America--</h3>
+            <table width="100%"><tbody>
+                    <tr class='main'><td width='380'><form id='CA'><b>Canada</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='PM'><b>Saint Pierre and Miquelon</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='US'><b>United States</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>    
+            </tbody></table><br><br>
+        </div>
+
+        <div id="tabpage7"><h3>--Oceania--</h3>
+            <table width="100%"><tbody>
+                    <tr class='main'><td width='380'><form id='AS'><b>American Samoa</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='AU'><b>Australia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='CX'><b>Christmas Island</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='CK'><b>Cook Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='FJ'><b>Fiji</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='PF'><b>French Polynesia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='GU'><b>Guam</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='KI'><b>Kiribati</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='MH'><b>Marshall Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='FM'><b>Micronesia, Federated States of</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='NR'><b>Nauru</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='NC'><b>New Caledonia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='NZ'><b>New Zealand</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='NU'><b>Niue</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='NF'><b>Norfolk Island</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='MP'><b>Northern Mariana Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='PW'><b>Palau</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='PG'><b>Papua New Guinea</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='PN'><b>Pitcairn</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='WS'><b>Samoa</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='SB'><b>Solomon Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='TK'><b>Tokelau</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='TO'><b>Tonga</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='TV'><b>Tuvalu</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='UM'><b>United States Minor Outlying Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='VU'><b>Vanuatu</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='WF'><b>Wallis and Futuna</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+            </tbody></table><br><br>
+        </div>
+        
+        <div id="tabpage8"><h3>--South America--</h3>
+            <table width="100%"><tbody>
+                    <tr class='main'><td width='380'><form id='AR'><b>Argentina</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='BO'><b>Bolivia, Plurinational State of</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='BR'><b>Brazil</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='CL'><b>Chile</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='CO'><b>Colombia</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='EC'><b>Ecuador</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='FK'><b>Falkland Islands (Malvinas)</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GF'><b>French Guiana</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GY'><b>Guyana</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='PY'><b>Paraguay</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='PE'><b>Peru</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='GS'><b>South Georgia and the South Sandwich Islands</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+                        <tr class='main'><td width='380'><form id='SR'><b>Suriname</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='UY'><b>Uruguay</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='VE'><b>Venezuela, Bolivarian Republic of</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td></tr>
+            </tbody></table><br><br>
+        </div>
+                
+        <div id="tabpage9"><h3>--South Pole--</h3>
+            <table width="100%"><tbody>
+                    <tr class='main'><td width='380'><form id='AQ'><b>Antarctica</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+                        <td width='380'><form id='BV'><b>Bouvet Island</b><br>
+                        <input type='radio' name='experience' value=4>Lived 
+                        <input type='radio' name='experience' value=3>Stayed
+                        <input type='radio' name='experience' value=2>Explored
+                        <input type='radio' name='experience' value=1>Passsed
+                        <input type='radio' name='experience' value=0 checked="checked">Unexplored
+                        </form></td>
+            </tbody></table><br><br>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+<script type="text/javascript" src="/static/changeTab.js"> </script>
+<script type="text/javascript" src="/static/showresult.js"></script>
+<script type="text/javascript" src="/static/init.js"> </script>
+<script type="text/javascript" src="/static/plotcountry.js"></script>
+
+
+</html>
